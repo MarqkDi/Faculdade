@@ -15,16 +15,16 @@ while acerto != 3:
 
     if num1 == ran1:
         acerto += 1
-    elif num2 == ran2:
+    if num2 == ran2:
         acerto += 1
-    elif num3 == ran3:
+    if num3 == ran3:
         acerto += 1
 
     if num1 != ran1 and (num1 == ran2 or num1 == ran3):
         dif += 1
-    elif num2 != ran2 and (num2 == ran3 or num2 == ran1):
+    if num2 != ran2 and (num2 == ran3 or num2 == ran1):
         dif += 1
-    elif num3 != ran3 and (num3 == ran1 or num3 == ran2):
+    if num3 != ran3 and (num3 == ran1 or num3 == ran2):
         dif += 1
 
     if acerto == 3:
