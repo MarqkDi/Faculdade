@@ -14,18 +14,20 @@ int main() {
         printf("A nota inserida e invalida!");
     }
     else if (FREQ < 0 || FREQ > 100) {
-        prinf("A frequencia insrida é invalida!");
+        printf("A frequencia inserida é invalida!");
     }
     else {
         MEDIA = (NOTA1 + NOTA2) / 2;
         if (MEDIA >= 7 && FREQ >= 75) {
-            printf("O aluno está aprovado com uma media de %f e uma frequencia de %d", MEDIA, FREQ);
+            printf("O aluno esta aprovado com uma media de %.2f e uma frequencia de %d%%", MEDIA, FREQ);
         }
-        else if (MEDIA >= 5 && FREQ < 75) {
-            prinf("O aluno esta de recuperacao com uma media de %f e uma frequencia de %d", MEDIA, FREQ);
+        //Erro na atividade, se um aluno tiver 6 de media e uma frequencia maior a 75 o programa se encerra sem dar um resultado
+        else if (MEDIA >= 5 && FREQ < 75 || FREQ > 75) {
+            printf("O aluno esta de recuperacao com uma media de %.2f e uma frequencia de %d%%", MEDIA, FREQ);
         }
         else if (MEDIA < 5 || FREQ < 75) {
-            printf("O aluno foi reprovado pois tem uma media de %f e uma frequencia de %d", MEDIA, FREQ);
+            printf("O aluno foi reprovado pois tem uma media de %.2f e uma frequencia de %d%%", MEDIA, FREQ);
         }
     }
+    return 0; 
 }
