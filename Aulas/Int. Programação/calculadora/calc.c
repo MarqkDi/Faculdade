@@ -39,7 +39,8 @@ int main () {
         }
         else if (OP == '%') {
             RESMOD = VALOR1 % VALOR2;
-            printf("O rsultado do modulo é: %d \n", RESMOD);
+            printf("O rsultado do modulo e: %d \n", RESMOD);
         }
     }
+    return 0;
 }
