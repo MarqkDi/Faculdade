@@ -13,33 +13,33 @@ int main () {
     printf("\n Digite + pra soma \n Digite - pra subtracao \n Digite * pra multiplicacao \n Digite / pra divisao \n Digite %% pra modulo \n Insira o operador: ");
     scanf(" %c", &OP);
     if (OP != '+' && OP != '-' && OP != '*' && OP != '/' && OP != '%') {
-        printf("Operador Inválido!");
+        printf("Operador Invalido!");
     }
     else {
         if (OP == '+') {
             RESSOMA = VALOR1 + VALOR2;
-            printf("O resultado da soma é: %d \n", RESSOMA);
+            printf("O resultado da soma e: %d \n", RESSOMA);
         }
         else if (OP == '-') {
             RESSUB = VALOR1 - VALOR2;
-            printf("O resultado da subtração é: %d \n", RESSUB);
+            printf("O resultado da subtracao e: %d \n", RESSUB);
         }
         else if (OP == '*') {
             RESMULT = VALOR1 * VALOR2;
-            printf("O resultado da multiplicação é: %d \n", RESMULT);
+            printf("O resultado da multiplicacao e: %d \n", RESMULT);
         }
         else if (OP == '/') {
             if (VALOR2 == 0) {
-                printf("Valor inválido (Não há como fazer divisão por 0)");
+                printf("Valor invalido (Nao ha como fazer divisao por 0)");
             }
             else {
                 RESDIV = (float) VALOR1 / VALOR2;
-                printf("O resultado da divisão é: %f \n", RESDIV);
+                printf("O resultado da divisao e: %f \n", RESDIV);
             }
         }
         else if (OP == '%') {
             RESMOD = VALOR1 % VALOR2;
-            printf("O rsultado do módulo é: %d \n", RESMOD);
+            printf("O rsultado do modulo é: %d \n", RESMOD);
         }
     }
 }
