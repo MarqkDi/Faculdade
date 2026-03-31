@@ -22,7 +22,7 @@ int main() {
             printf("O aluno esta aprovado com uma media de %.2f e uma frequencia de %d%%", MEDIA, FREQ);
         }
         //Erro na atividade, se um aluno tiver 6 de media e uma frequencia maior a 75 o programa se encerra sem dar um resultado
-        else if (MEDIA >= 5 && FREQ < 75 || FREQ > 75) {
+        else if (MEDIA >= 5 && FREQ >= 75) {
             printf("O aluno esta de recuperacao com uma media de %.2f e uma frequencia de %d%%", MEDIA, FREQ);
         }
         else if (MEDIA < 5 || FREQ < 75) {
