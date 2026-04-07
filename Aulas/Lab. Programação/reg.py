@@ -7,7 +7,7 @@ TPASS = "NULL"
 LOG = 0
 while LOG == 0:
     CHO = int(input("Você deseja efetuar registro ou login? \n1 - Login\n2 - Registro\n"))
-    if 1 != CHO != 2:
+    if (1 != CHO) or (CHO != 2):
         print("Escolha inválida!")
     else:
         if CHO == 1:
