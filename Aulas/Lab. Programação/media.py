@@ -3,7 +3,7 @@
 NOTA1 = float(input("Digite a primeira nota do aluno: "))
 NOTA2 = float(input("Digite a segunda nota do aluno: "))
 NOTA3 = float(input("Digite a terceira nota do aluno: "))
-if 0 > NOTA1 > 10 or 0 > NOTA2 > 10 or 0 > NOTA3 > 10:
+if (NOTA1 < 0 or NOTA1 > 10) or (NOTA2 < 0 or NOTA2 > 10) or (NOTA3 < 0 or NOTA3 > 10):
     print("Número inválido")
 else:
     MEDIA = (NOTA1 + NOTA2 + NOTA3) / 3
