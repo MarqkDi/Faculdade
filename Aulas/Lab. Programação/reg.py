@@ -1,13 +1,9 @@
 #Atividade Abud
 #Data 1/04/26
-LUSER = "NULL"
-TUSER = "NULL"
-LPASS = "NULL"
-TPASS = "NULL"
 LOG = 0
 while LOG == 0:
     CHO = int(input("Você deseja efetuar registro ou login? \n1 - Login\n2 - Registro\n"))
-    if (1 != CHO) or (CHO != 2):
+    if (CHO != 1) and (CHO != 2):
         print("Escolha inválida!")
     else:
         if CHO == 1:
