@@ -36,7 +36,7 @@ else:
 print(f'{"Resumo Aluno":=^50}')
 print(f'Nota na Prova: {" " * 5}{notaProva:.2f}')
 print(f'Nota no Trabalho: {" " * 2}{notaTrabalho:.2f}')
-print(f'Frequência: {" " * 8}{frequencia}')
+print(f'Frequência: {" " * 8}{frequencia}%')
 print(f'Média: {" " * 13}{media:.2f}')
 print(f'Situação: {" " * 7}{situacao}')
 print(f'{"=" * 50}')
