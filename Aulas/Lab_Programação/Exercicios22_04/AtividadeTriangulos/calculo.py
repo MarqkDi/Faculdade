@@ -7,8 +7,7 @@ def clasTriangulo (a):
                  retangulo = True
             if a[0] == a[1] == a[2]: return 'Equilátero', retangulo
             elif (a[0] == a[1]) or (a[0] == a[2]) or (a[1] == a[2]): return 'Isóceles', retangulo
-            elif (a[0] != a[1]) and (a[0] != a[2]) and (a[1] != a[2]): return 'Escaleno', retangulo
+            else: return 'Escaleno', retangulo
     
-    else:
-        if (a[0] + a[1]) == a[2]: return True, False
-        else: return None, False
+    elif (a[0] + a[1]) == a[2]: return 'Equilatero', False
+    else: return None, False

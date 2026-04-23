@@ -2,28 +2,25 @@ from entrada import listaTriangulo
 from calculo import clasTriangulo
 
 lista = listaTriangulo()
-triangulo, retangulo = clasTriangulo(lista)
+tipo, retangulo = clasTriangulo(lista)
 
-print(f'{"Resumão do Triângulo":=^63}')
-print('')
-if triangulo is not None:
+print(f'{"Resumão do Triângulo":=^63} \n')
 
-    if triangulo != True:
-
-        print('É possível criar um triângulo!')
-
-        if retangulo:
-            print('É um triângulo retângulo!')
-        else:
-            print('Não é um triângulo retângulo!')
-
-        print(f'Tipo do triângulo: {triangulo}')
-
-    else:
-        print('Não é possível criar um triângulo, porém é possível formar um segmento degenerado!')
-
-else:
+if tipo is None:
     print('Não é possível formar um triângulo, nem um segmento degenerado!')
 
+elif tipo == 'Degenerado':
+    print('Não é possível criar um triângulo, porém é possível formar um segmento degenerado!')
+
+else:
+    print('É possível criar um triângulo!')
+
+    if retangulo:
+        print('É um triângulo retângulo!')
+    else:
+        print('Não é um triângulo retângulo!')
+
+    print(f'Tipo do triângulo: {tipo}')
+
 print('')
-print(f'{"=" * 63}')
+print('\n' + '=' * 63)
